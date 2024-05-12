@@ -68,3 +68,64 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+May 12th Sunday 2024 
+Learning Episode - 14 | NetflixGPT - The Beginnig !!  Namaste React 
+
+- created this app using create-react-app 
+
+- Push this app to my github repo 
+ from the repo, run these command on terminal:
+ git remote add origin https://github.com/bishwo75/netflix-gpt.git
+git branch -M main
+git push -u origin main
+
+
+
+Our plan/approach to develop netflix:
+#Features
+- Login / SignUp page
+ - Sign In / Sign Up form 
+ - once logged in, rediect to browse page
+
+- Browse (after authentication)
+  - Header
+  - Main Movie
+   - Trailer in Background
+   - Title & Description
+   - Movie Suggestions
+     - MovieLists * n 
+
+- NetflexGPT
+ - Search Bar
+ - Movie Suggestions 
+
+Setup Tailwind css as below: Install below:
+npm install -D tailwindcss
+npx tailwindcss init
+- once you install above, it will automatically add a tailwind.congig.js file on our folder
+- now, we need to configure path:
+- go to tailwind.config.js file and add below's:
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+- now write these 3 things in index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+that is all, tailwind css is installed on our app !
+
+
+
