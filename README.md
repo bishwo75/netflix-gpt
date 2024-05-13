@@ -127,5 +127,15 @@ module.exports = {
 
 that is all, tailwind css is installed on our app !
 
+install React router dom: npm i -D react-router-dom
+create a routing on Body. 
+
+On Head, add Netflix logo
+- Build Login form 
+
+create a sign-up form too - on the same form, togle for sign in and sign-up
+- use formik library from formik.org or some any other if you have a lot of form fields for validation
+
+
 
 
